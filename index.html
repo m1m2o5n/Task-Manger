@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manger</title>
+  <style>
+    *{padding: 0;margin: 0;font-family: serif;scroll-behavior: smooth;}
+    h1 {background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));;color: #fff; text-align: center;padding: auto;margin: 0;height: 47px; font-size: 42px;}
+   .content {display: flex;justify-content: center;align-items: center;height: 1vh;  box-shadow: -5px -px 10px 5px rgba(0, 90, 255, 0.8), 5px 5px 15px 7px rgba(0, 213, 83, 0.8);max-width: 700px;margin: auto 0; max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    margin-top: 66px;
+  }
+  .content .input{border-radius: 20px; outline: none;border: none;font-family: 'Courier New', Courier, monospace;font-size: 20px;width: 110%;border-bottom-right-radius: 3px;  border-bottom: 4px solid #1dc5bd; border-top:5px solid #1dc5bd  ;}
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+button {
+  width: 150px;
+  height: 60px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  color:#1dc5bd;
+}
+
+button:hover {
+   background-image: linear-gradient(90deg, rgba(144, 245, 154, 1), rgba(4, 202, 255, 1));;
+  color: white;
+  font-size: 1.5em;
+}
+/* tasks div*/
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(168, 202, 240, 1), rgba(233, 240, 250, 1));
+  width: 66%;
+  margin: auto ;
+  margin-top: 52px;
+  height: 12vh;
+  border-radius: 20px;
+  border: #315cfd 3px solid #1dc5bd ;
+  box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.tasks li {
+  list-style: none;
+  color: #315cfd;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+.tasks span:hover {
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <h1>Task Manger</h1>
+  <div class="content">
+    <input type="text" class="input" placeholder="Add A New Task ">
+    <button class="add">Add</button>
+  </div>
+  <div class="tasks">
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
